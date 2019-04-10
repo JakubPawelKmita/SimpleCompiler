@@ -1,0 +1,5 @@
+GET B #2 rejestry
+GET C
+ADD B C #SUB
+PUT B
+HALT

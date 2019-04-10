@@ -1,0 +1,5 @@
+SUB A A
+INC A
+LOAD B
+PUT B
+HALT

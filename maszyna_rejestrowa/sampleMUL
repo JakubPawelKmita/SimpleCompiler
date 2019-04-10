@@ -1,0 +1,9 @@
+GET A #3 rejestry
+GET B
+SUB C C
+JZERO B 7
+ADD C A
+DEC B
+JUMP 3
+PUT C
+HALT

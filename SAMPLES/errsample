@@ -1,0 +1,12 @@
+DECLARE a; b;
+IN
+ FOR i FROM 0 TO 2 DO
+ IF i>0 THEN
+ a:=b;
+ ENDIF
+ IF i=0 THEN
+ READ b;
+ ENDIF
+ ENDFOR
+END
+

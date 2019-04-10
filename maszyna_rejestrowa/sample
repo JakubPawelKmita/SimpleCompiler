@@ -1,0 +1,21 @@
+SUB B B #program drukuje kwadraty kolejnych liczb az do podanej
+INC B
+ADD B B
+ADD B B
+INC B
+GET B
+SUB C C
+INC C #skok2 7
+COPY E C
+COPY G C
+COPY F C
+DEC E #skok4 11
+JZERO E 15 #<-skok3
+ADD F G
+JUMP 11 #<-skok4
+PUT F #skok3 15
+COPY D B
+SUB D C
+JZERO D 20 #<-skok1
+JUMP 7 #<-skok2
+HALT #skok1 20

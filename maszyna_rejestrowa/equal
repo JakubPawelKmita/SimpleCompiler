@@ -1,0 +1,13 @@
+GET A #3rejestry
+GET B
+COPY C A
+SUB A B
+JZERO A 6 #przeskocz linie
+JUMP 8#koniec, zly war
+SUB B C
+JZERO B 10#dobry warunek
+SUB A A #zly warunek
+JUMP 11
+INC A
+PUT A
+HALT

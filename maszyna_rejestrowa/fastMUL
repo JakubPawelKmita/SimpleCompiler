@@ -1,0 +1,22 @@
+GET A #ze sprawdzaniem która liczba jest większa
+GET B
+COPY C A
+SUB A B
+JZERO A 8
+COPY A B
+COPY B C
+JUMP 9
+COPY A C
+SUB C C
+JZERO A 19
+JODD A 15
+HALF A
+ADD B B
+JUMP 10
+ADD C B
+HALF A
+ADD B B
+JUMP 10
+COPY A C
+PUT A
+HALT

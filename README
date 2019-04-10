@@ -1,0 +1,23 @@
+DANE AUTORA:
+Jakub Kmita
+------------------------------------------------------
+INFORMACJE:
+Kompilator został napisany w języku C++
+Kompiluje prosty kod imperatywny do prostego assemblera na maszynę rejestrową napisaną przez Dr-a Macieja Gębalę
+------------------------------------------------------
+OPIS PLIKÓW:
+1. bison.y - plik źródłowy programu bison
+2. flex.l - plik źródłowy programu flex
+3. fun.cpp - zbiór funkcji używanych w programie
+4. *.hpp - pliki nagłówkowe
+5. Makefile - kompiluje kompilator
+------------------------------------------------------
+SPOSÓB URUCHOMIENIA:
+1. Uruchomić terminal
+2. Przejść do katalogu z plikiem Makefile
+3. Wpisać make i czekać
+4. Wpisać ./kompilator
+------------------------------------------------------
+> Pliki zawirające kod języka imperatywnego w większości mają rozszerzenie .imp
+> Pliki zawierające kod assemblera .asm
+> W folderze SAMPLES można znaleźć gotowy skompilowany kompilator, maszynę rejestrową i przykładowe programy do wpuszczenia w kompilator, a ich wyniki w maszynę

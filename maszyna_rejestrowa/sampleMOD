@@ -1,0 +1,23 @@
+GET A #5 rejestrów
+GET B
+JZERO B 22 #JUMP na koniec bo blad
+SUB C C
+SUB E E
+COPY D A
+ADD E B
+SUB D E
+JZERO D 11
+INC C
+JUMP 5
+SUB E A
+JZERO E 14
+JUMP 15 #skok na koniec dzielenia
+INC C
+SUB D D
+DEC B
+ADD D C
+JZERO B 20 #skocz na koniec mnozenia
+JUMP 16
+SUB A D
+PUT A
+HALT

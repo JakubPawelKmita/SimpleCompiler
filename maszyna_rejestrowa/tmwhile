@@ -1,0 +1,72 @@
+SUB A A #jest jakiś drobny błąd...
+INC A
+GET B
+STORE B
+INC A
+GET B
+STORE B
+INC A
+GET B
+STORE B
+INC A #10
+GET B
+STORE B
+INC A
+GET B
+STORE B
+INC A
+GET B
+STORE B #a-f zapisane w komórkach 1-6
+SUB A A
+INC A #20
+LOAD B
+SUB C C
+INC C
+ADD C C
+INC C
+ADD C C #pod B, mamy a, pod C 6
+SUB C B
+JZERO C 31 #do warunku zlego, 3 linie niżej
+SUB C C
+INC C #30
+COPY H C #linia 31
+JZERO H 67 #do wyjscia z tego while'a
+SUB A A
+INC A
+LOAD B
+SUB C C
+INC C
+ADD B C
+STORE B #drugi while
+PUT B #40
+SUB A A
+INC A
+ADD A A
+LOAD B #to niżej wklejone
+SUB C C
+INC C
+ADD C C
+INC C
+ADD C C #pod B mamy b, pod C 6
+SUB C B #50
+JZERO C 54 #do warunku zlego, 3 linie niżej
+SUB C C
+INC C #linia 53
+COPY H C #linia 54
+JZERO H 66 #do wyjscia z tego while'a
+SUB A A
+INC A
+ADD A A
+LOAD B
+SUB C C #60
+INC C #61
+ADD B C
+STORE B
+PUT B ##ok, ten while wykonal sie 6 razy
+JUMP 40 #do wewnetrznego while'a
+JUMP 19 #do pierwszego while'a
+GET H #linia 67
+INC H
+PUT H
+HALT
+
